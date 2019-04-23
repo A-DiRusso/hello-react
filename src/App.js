@@ -23,6 +23,10 @@ function App() {
           <Greet whom="Milla" />
           <Greet />
           <Counter />
+          <Counter />
+          <Counter />
+          <Counter />
+          {/* this is a comment in JSX*/}
         <a
           className="App-link"
           href="https://reactjs.org"
