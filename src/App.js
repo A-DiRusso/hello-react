@@ -8,7 +8,7 @@ import './App.css';            //Recomendation: no individual style files. just 
 // import Counter from './Counter';
 import ClickyCounter from './ClickyCounter';
 import DecrementCounter from './DecrementCounter';
-
+import ButtonCount from './ButtonCount'
 // "App" is an arbertrary name - App is a component
 // A component is a function that returns a React Element
 // A React Element is a description of a
@@ -21,9 +21,10 @@ function App() {
           {/* <Greet whom="👹" />
           <Greet /> */}
           {/* <Counter /> */}
+          <ClickyCounter startAt="300"/>
           <ClickyCounter />
           <DecrementCounter />
-        
+          <ButtonCount />
           {/* this is a comment in JSX*/}
         <a
           className="App-link"

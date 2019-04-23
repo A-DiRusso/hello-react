@@ -1,26 +1,25 @@
 import React from 'react';
 
-class ClickyCounter extends React.Component {
+
+class ButtonCount extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            //the OR operator shorter version of turnerary
-            //no need to use this.props becauxe we are inside the construtor
-            //that creates the 'this' in the first place
-            number: props.startAt || 0
-        }
+            this.state = {
+                number: 0
+            };
     }
     render() {
         return (
             <div>
                 <h2>{this.state.number}</h2>
-                    <button 
+                    <button
                         onClick={this._incrementNumber}
                     >+</button>
+                    <button
+                        onClick={this._decrementNumber}
+                    >-</button>
             </div>
-
         )
-        
     }
 
     _incrementNumber = () => {
@@ -28,6 +27,12 @@ class ClickyCounter extends React.Component {
             number: this.state.number + 1
         });
     }
+    
+    _decrementNumber = () => {
+        this.setState({
+            number: this.state.number - 1
+        });
+    }
 }
 
-export default ClickyCounter;
+export default ButtonCount;
