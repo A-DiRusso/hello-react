@@ -30,7 +30,7 @@ class Counter extends React.Component {
             //safely change state using this.setState()
             //it accepts an object with updated key/value pairs
             this.setState({ number: this.state.number + 1 })
-        }, 1000);
+        }, 10000);
         
     }
     // define what will be drawn with method

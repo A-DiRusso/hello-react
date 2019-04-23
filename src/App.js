@@ -6,7 +6,7 @@ import React from 'react';    //Pull in the react library this will be at the to
 import './App.css';            //Recomendation: no individual style files. just use index.css
 import Greet from './Greet';
 import Counter from './Counter';
-
+import ClickyCounter from './ClickyCounter';
 
 
 // "App" is an arbertrary name - App is a component
@@ -23,9 +23,7 @@ function App() {
           <Greet whom="Milla" />
           <Greet />
           <Counter />
-          <Counter />
-          <Counter />
-          <Counter />
+          <ClickyCounter />
           {/* this is a comment in JSX*/}
         <a
           className="App-link"
