@@ -4,8 +4,8 @@
 import React from 'react';    //Pull in the react library this will be at the top of every .js file
 //import logo from './logo.svg'; //import an image this makes the image more preformant with react
 import './App.css';            //Recomendation: no individual style files. just use index.css
-import Greet from './Greet';
-import Counter from './Counter';
+// import Greet from './Greet';
+// import Counter from './Counter';
 import ClickyCounter from './ClickyCounter';
 
 
@@ -18,11 +18,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <Greet whom="👹" />
-          <Greet whom="Bobby" />
-          <Greet whom="Milla" />
-          <Greet />
-          <Counter />
+          {/* <Greet whom="👹" />
+          <Greet /> */}
+          {/* <Counter /> */}
+          <ClickyCounter />
+          <ClickyCounter />
           <ClickyCounter />
           {/* this is a comment in JSX*/}
         <a
@@ -31,7 +31,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Click the Button!!!!
         </a>
       </header>
     </div>

@@ -1,15 +1,29 @@
 import React from 'react';
 
 class ClickyCounter extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            number: 0
+        }
+    }
     render() {
         return (
             <div>
-                <h2>0</h2>
-                    <button>+</button>
+                <h2>{this.state.number}</h2>
+                    <button 
+                        onClick={this._incrementNumber}
+                    >+</button>
             </div>
 
         )
         
+    }
+
+    _incrementNumber = () => {
+        this.setState({
+            number: this.state.number + 1
+        });
     }
 }
 
